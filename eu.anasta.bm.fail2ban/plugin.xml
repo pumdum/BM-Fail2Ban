@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="net.bluemind.core.authenticationservice">
+      <authentication_service
+            implementation="eu.anasta.bm.fail2ban.Fail2BanAuthentification">
+      </authentication_service>
+   </extension>
+   <extension
+         point="net.bluemind.core.loginvalidation">
+      <validation_listener
+            implementation="eu.anasta.bm.fail2ban.Fail2BanValidation">
+      </validation_listener>
+   </extension>
+
+</plugin>

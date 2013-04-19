@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: eu.anasta.bm.fail2ban
+Bundle-SymbolicName: eu.anasta.bm.fail2ban;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: eu.anasta.bm.fail2ban.Activator
+Bundle-Vendor: anasta
+Require-Bundle: org.eclipse.core.runtime,
+ net.bluemind.core;bundle-version="1.0.0",
+ net.bluemind.core.common;bundle-version="1.0.0",
+ net.bluemind.slf4j;bundle-version="1.6.4",
+ net.bluemind.lib.guava;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
