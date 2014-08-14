@@ -9,6 +9,8 @@ Require-Bundle: org.eclipse.core.runtime,
  net.bluemind.core;bundle-version="1.0.0",
  net.bluemind.core.common;bundle-version="1.0.0",
  net.bluemind.slf4j;bundle-version="1.6.4",
- net.bluemind.lib.guava;bundle-version="1.0.0"
+ net.bluemind.lib.guava;bundle-version="1.0.0",
+ net.bluemind.core.handler.ui,
+ net.bluemind.core.handler.host
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy

@@ -13,5 +13,23 @@
             implementation="eu.anasta.bm.fail2ban.Fail2BanValidation">
       </validation_listener>
    </extension>
+   <extension
+         point="net.bluemind.core.custompropertyrequirements">
+      <custom_property_requirements
+            implementation="eu.anasta.bm.fail2ban.Fail2BanPropertyRequirements">
+      </custom_property_requirements>
+   </extension>
+   <extension
+         point="net.bluemind.core.handler.ui.extensionprovider">
+      <ui_extension
+            implementation="eu.anasta.bm.fail2ban.SystemExtensionProvider">
+      </ui_extension>
+   </extension>
+   <extension
+         point="net.bluemind.core.handler.host.templatecustomizer">
+      <template_customizer
+            implementation="eu.anasta.bm.fail2ban.FailTagProvider">
+      </template_customizer>
+   </extension>
 
 </plugin>

@@ -23,6 +23,9 @@ public class Fail2BanValidation implements ILoginValidationListener {
 			String userLogin, Domain bmDomain, String password) {
 
 		Fail2BanTrial.getInstance().clearAttendsFor(userLogin + "@" + bmDomain.getName());
+		if ("admin0".equals(userLogin) && "gloabl.virt".equals(bmDomain.getName())){
+
+		}
 
 	}
 
